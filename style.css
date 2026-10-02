@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f1e8;
+    color: #394536;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    background: #697b63;
+
+    padding: 30px 20px;
+
+    color: white;
+}
+
+
+.logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo h2 {
+    font-size: 25px;
+}
+
+.logo p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.menu {
+    text-decoration: none;
+    color: white;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+
+.menu:hover,
+.menu.active {
+    background: #52624d;
+}
+
+
+/* CONTENT */
+
+.content {
+    margin-left: 250px;
+}
+
+
+/* SECTION */
+
+.section {
+    min-height: 100vh;
+
+    padding: 80px 10%;
+
+    scroll-margin-top: 20px;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+
+    background: #e8e1d2;
+}
+
+
+.small-title {
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    color: #697b63;
+
+    margin-bottom: 12px;
+}
+
+
+.hero h1 {
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+
+.hero p {
+    max-width: 600px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+.button {
+    display: inline-block;
+
+    border: none;
+
+    background: #697b63;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+.button:hover {
+    background: #52624d;
+}
+
+
+/* SECTION TITLE */
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+
+.section-title h2 {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+.section-title p {
+    line-height: 1.7;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+.card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+
+.card h3 {
+    margin-bottom: 20px;
+}
+
+
+.card ul {
+    padding-left: 20px;
+}
+
+
+.card li {
+    margin-bottom: 10px;
+}
+
+
+.tambah-hobi {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+.tambah-hobi input {
+    flex: 1;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+}
+
+
+.tambah-hobi button {
+    border: none;
+
+    background: #697b63;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+
+/* QUOTE */
+
+.quote-box {
+    background: white;
+
+    padding: 50px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+
+.quote-box p {
+    font-size: 25px;
+
+    font-style: italic;
+
+    margin-bottom: 30px;
+}
+
+
+/* WEATHER */
+
+.weather-box {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.weather-box input {
+    flex: 1;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+
+.result {
+    margin-top: 25px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    min-height: 100px;
+}
+
+
+.weather-result h3 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.weather-result p {
+    margin-bottom: 8px;
+}
+
+
+/* RECOMMENDATION */
+
+.recommend-box {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #394536;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+
+footer p {
+    margin-top: 10px;
+
+    font-size: 14px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+    }
+
+
+    .content {
+        margin-left: 0;
+    }
+
+
+    .sidebar nav {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section {
+        padding: 60px 6%;
+    }
+
+}
